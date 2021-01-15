@@ -1,0 +1,17 @@
+@mixin border($width,$color) {
+  border: $width solid $color;
+}
+.user{
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+  @include border(5px,rgba(36, 153, 207, 0.788) )
+}
+.userlist{
+  li{
+    background-color: cornflowerblue;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+  }
+}
